@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar'
 import Email from '../components/Email'
 import Footer from '../components/Footer'
 import { MdOutlineLocationOn } from "react-icons/md";
-import CarouselItem from '../components/CarouselItem';
 
 const Hotel = () => {
 
@@ -20,18 +19,18 @@ const Hotel = () => {
           <h2 className="text-sm font-medium mb-5">Excellent location - 500m from center</h2>
           <p className="font-medium mb-5">Book a stay over $114 at this property and get a free airport taxi</p>
           {/* images/ carousel */}
-          <div>
-            <CarouselItem />
+          <div className='w-full h-96 overflow-hidden'>
+            <img className="w-full h-full object-cover rounded" src="https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb" alt="img" />
           </div>
           <h2 className="text-xl font-bold my-5">Stay in the heart of the london</h2>
           <p className="w-8/12 tracking-normal mb-32">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, mollitia quis eos odit consequatur assumenda dolorum ullam veritatis explicabo laboriosam laborum ad tempora! Ipsum nam culpa quos voluptates tempora exercitationem consectetur delectus dolorum? Tempore voluptatibus voluptatum molestiae repellendus voluptates dolorum, reprehenderit rem, hic, deserunt corporis fugit fuga quod voluptate incidunt?</p>
           <div className="absolute top-1 right-0">
             <div className="text-xl px-4 py-1 bg-[#0a6cc2] text-white font-medium tracking-wide rounded">Reserve Now</div>
           </div>
-          <div className="absolute -bottom-24 right-0 bg-blue-100 rounded w-3/12">
+          <div className="absolute -bottom-28 right-0 bg-blue-100 rounded w-3/12">
             <h2 className="text-xl font-medium p-5">Prefer for a 9-night stay!</h2>
             <p className="pb-5 px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eos nihil porro quidem molestias tenetur aliquid doloremque commodi ipsum necessitatibus.</p>
-            <div className="text-lg text-center px-4 py-1 bg-[#0a6cc2] text-white font-medium tracking-wide rounded">Reserve or Book Now!</div>
+            <div className="text-lg text-center px-2 py-1 mb-5 bg-[#0a6cc2] text-white font-medium tracking-wide rounded w-9/12 mx-auto">Reserve or Book Now!</div>
           </div>
         </div>
       <Email />
